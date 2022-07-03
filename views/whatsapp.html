@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>KHELLO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/whatsappInfo.css">
+    </head>
+    <body>
+        <div id="header"><a href="abovewater.html"><p>HELP!</p></a></div>
+        <div id="content">
+            <div><h1>Hello I am Under The Water<i class="fa-brands fa-whatsapp"></i></h1></div>
+            <div><p>To save me plz call +96176984148</p></div>
+        </div>
+        <div id="footer"><p>Cool Ha?</p></div>
+        <svg>
+            <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+              <feTurbulence id="sea-filter" numOctaves="1" seed="2" baseFrequency="0.000 0.000000000000000000005"></feTurbulence>
+              <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+              <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
+            </filter>
+          </svg>
+    </body>
+</html>

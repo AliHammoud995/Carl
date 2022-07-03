@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    background: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    position: absolute;
+    top: 370px;
+    font-size: larger;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #333333;
+    border-left: 2px solid #f7efef;
+
+
+}
+
+.p1 {
+    top: 32%;
+    ;
+}
+
+.p1::after {
+    animation: typing 1s steps(14) forwards;
+}
+
+.p2 {
+    position: absolute;
+    color: #fff;
+    top: 37%;
+}
+
+.p2::after {
+    animation-delay: 1s !important;
+    animation: typing 1s steps(14) forwards;
+    border-left: 0;
+}
+
+.p3 {
+    position: absolute;
+    color: #fff;
+    top: 42%;
+}
+
+.p3::after {
+    animation-delay: 2s !important;
+    animation: typing 1s steps(14) forwards;
+    border-left: 0;
+}
+
+@keyframes containershow {
+    to {
+        visibility: visible;
+    }
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        visibility: hidden;
+        width: 0%;
+
+    }
+}
+
+.buttonContainer {
+    position: absolute;
+    top: 50%;
+    animation: skadoosh 2s  forwards;
+    opacity: 0;
+}
+@keyframes skadoosh {
+    100% {
+        opacity: 1;
+    } 
+}
+#button1 {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    margin: 10px;
+    transition: 0.5s;
+}
+#button1:hover{
+    letter-spacing: 0.25em;
+    background: #0eac3d;
+    box-shadow: 0 0 35px #0eac3d;
+}
+
+#button2 {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    margin: 10px;
+}
+#button2:hover{
+    letter-spacing: 0.25em;
+    background: #f11a0b;
+    box-shadow: 0 0 35px #f11a0b;
+}
+
+footer {
+    background: #3586ff;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .icons li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+footer .icons li a {
+    font-size: 2em;
+    color: #fff;
+}
+
+footer .icons li:hover {
+    transform: translateY(-20px);
+}
+
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWav_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWav_02 2s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWav_02 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}

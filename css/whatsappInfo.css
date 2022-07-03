@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #006994;
+    flex-direction: column;
+    filter: url("#turbulence");
+}
+div i {
+    color: #25d366;
+    scale: 84%;
+}
+
+#header{
+
+    width: 100%;
+    height: 39%;
+}
+#header a {
+    text-decoration: none;
+}
+#header p {
+    color: #000000;
+}
+#footer{
+    display: grid;
+    align-content: center;
+    width: 100%;
+    height: 45%;
+   
+}
+#footer p {
+    padding: 20px;
+}
+#content{
+    width: 100%;
+    height: 16%;
+    justify-content: center;
+    display: grid;
+}
+#content p {
+    float: right;
+    color: #25d366;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/theFirstTrial.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>This is our first challenge!!!</p>
+        <p>You won't believe this but I think Habibi stole the tetris code!</p>
+        <p>
+            Anyway, score 50 to advance
+        </p>
+        <h2 id="scoreboard">Score: 0</h2>
+    </div>
+    <div class="controls">
+        <p>Use the WASD keys to play</p>
+        <p>Don't touch the house down there</p>
+    </div>
+    <div class="beta">
+        <li><a href="hello.html"><i class="fa-solid fa-house"></i></a></li>
+    </div>
+    <audio autoplay>
+        <source src="../sounds/Naruto Soundtrack - Naruto Main Theme.mp3" type="audio/mpeg">
+    </audio>
+    <canvas id="game-canvas" width="300" height="600"></canvas>
+   
+    <script src="../js/constants.js"></script>
+    <script src="../js/piece.js"></script>
+    <script src="../js/gamemodel.js"></script>
+    <script src="../js/tetris.js"></script>
+</body>
+
+</html>
